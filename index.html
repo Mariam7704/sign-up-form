@@ -22,22 +22,22 @@
         </div>
         <div class="mid">
             <h2>Let's do this!</h2>
-            <div class="form">
+            <form method="post" id="my-form">
                 <div class="form-col">
                     <div class="field">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" name="first-name" id="first-name" required>
                     </div>
                     
 
                     <div class="field">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
 
                     <div class="field">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" minlength="8" required>
                     </div>
                     
                 </div>
@@ -45,23 +45,23 @@
                 <div class="form-col">
                     <div class="field">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name">
+                        <input type="text" name="last-name" id="last-name" required>
                     </div>
 
                     <div class="field">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input type="tel" name="phone" id="phone" required>
                     </div>
 
                     <div class="field">
                         <label for="confirm">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm" id="confirm">
+                        <input type="password" name="confirm" id="confirm" minlength="8" required>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="bottom">
-            <button type="submit">Create Account</button>
+            <button type="submit" form="my-form">Create Account</button>
             <p>Already have and account? Log in</p>
         </div>
     </div>
